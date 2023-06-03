@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d4e31e7268.js" crossorigin="anonymous"></script>
+    <link href="Icons/fontawesome-free-6.2.1-web/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="IMG/Shorticon.png" type="image/png" />
+    <link rel="icon" type="image/jpg" href="./img/logo_devloper.PNG">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Xtech </title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body onclick="PlayAudio()">
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo" data-aos="fade-down-right">
+                <a href="https://github.com/xisraeluni" target="_blank">Xtech Solutions</a>
+            </div>
+            <nav id="nav">
+                <ul data-aos="fade-down-left">
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()" data-aos="fade-down-left">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="200"
+            data-aos-offset="0">
+            <div class="contenedor-img" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <img src="img/ia4.PNG" alt="">
+            </div>
+
+            <h1>I'am : <span id="element"></span></h1>
+            <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+            <script>
+                var typed = new Typed('#element', {
+                    strings: ['Israel Basurto', 'Junior Developer', 'Blogger ', ' & ; Digital Nomad and  Freelancer...'],
+                    typeSpeed: 100,
+                    backSpeed: 100,
+                    backDelay: 1000,
+                    loop: true
+                });
+            </script>
+        </div>
+    </section>
+
+    <!--------------------------------------------------------------Boton Flotante-------------------------------------------------------------------------------------------------->
+
+    <div class="burbujas" data-aos="fade-up">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="https://www.facebook.com/israel.bas.2019/" target="_blank"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/xisrael__uni/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/xisraeluni" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://store.steampowered.com/?l=spanish" target="_blank"><i
+                    class="fa-brands fa-steam-symbol"></i></a>
+            <a href="https://www.linkedin.com/in/israel-basurto-dev/" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="icon-mas2"><i class="fa-solid fa-plus"></i></label>
+        </div>
+    </div>
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <div data-aos="zoom-out-down">
+
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, soy Israel</span> programador junior , nomada digital y analista en desarrollo de
+                    sistemas de
+                    información. Un gusto saludarte, soy un programador autodidacta y siempre buscando aprender nuevas
+                    cosas y mejorar mis habilidades y seguir creciendo profesionalmente para mi carrera hoy dia de
+                    FrontEnd y
+                    seguir en constante aprendizaje ya que dia a dia va creciendo toda la tecnologia y hay que estar
+                    a la vanguardia</p>
+
+            </div>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col" data-aos="zoom-out-right">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños:</strong>
+                            02 / Diciembre
+                        </li>
+                        <li>
+                            <strong>Teléfono:</strong>
+                            +52 7791041668
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            xisrael34@gmail.com
+                        </li>
+                        <li>
+                            <strong>País:</strong>
+                            Mexico
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong>
+                            <span>Programador Junior </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes" data-aos="zoom-in-down">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes" data-aos="zoom-in-down">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes" data-aos="zoom-in-up">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes" data-aos="zoom-in-up">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <span>DISEÑO</span>
+                        </div>
+                        <div class="interes" data-aos="zoom-in-down">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        <div class="interes" data-aos="zoom-in-down">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>EJERCICIO</span>
+                        </div>
+                        <div class="interes" data-aos="zoom-in-up">
+                            <i class="fa-solid fa-mug-saucer"></i>
+                            <span>CAFE</span>
+                        </div>
+                        <div class="interes" data-aos="zoom-in-up">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="https://app.aluracursos.com/user/xisrael34/fullCertificate/312c18b5bc4e5543105885efcf2b88ce"
+                    class="btn" target="_blank" download="CV-Israel"> Descargar
+                    CV</a><i
+                    herf="https://app.aluracursos.com/user/xisrael34/fullCertificate/312c18b5bc4e5543105885efcf2b88ce"
+                    class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            <button>
+                <a href="https://app.aluracursos.com/user/xisrael34/fullCertificate/312c18b5bc4e5543105885efcf2b88ce"
+                    class="btn"
+                    download="https://app.aluracursos.com/user/xisrael34/fullCertificate/312c18b5bc4e5543105885efcf2b88ce"
+                    target="_blank">
+                    Pagina Certificados Estudios Oracle</a><i
+                    herf="https://app.aluracursos.com/user/xisrael34/fullCertificate/312c18b5bc4e5543105885efcf2b88ce"
+                    class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion" data-aos="fade-up" data-aos-duration="3000">
+            <h2>Skills</h2>
+            <div class="fila" data-aos="fade-up" data-aos-duration="3000">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>35%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ilustratror</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>php</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java Scrip</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Organización y Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Persona Práctica y Recursiva</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>98%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo bajo presión</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Persona con iniciativa:</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda" data-aos="fade-right">
+                    <h3>Curso</h3>
+                    <div class="item izq" data-aos="fade-right">
+                        <h4>Ingles B1</h4>
+                        <span class="casa">Natural English </span>
+                        <span class="fecha">2023 - En formación </span>
+                        <p>Aptitud para el aprendizaje de los idiomas. Habilidades para la comunicación verbal y
+                            escrita asi como ingles tecnico en programacion y
+                            Afinidad por la lectura y facilidad para la comprensión de ésta y para la producción de
+                            textos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq" data-aos="fade-right">
+                        <h4>ALURA LATAM
+                            PROGRAMACIÓN</h4>
+                        <span class="casa">Oracle ( alura ) </span>
+                        <span class="fecha">2023 - En formación </span>
+                        <p>Contenido especializado en tecnología y programacion y cursos practicos de desarrollo
+                            personal.Con certificaciones valiosas que sirven para el portafolios en calidad de empleo y
+                            tener mas oportunidadesen el mundo laboral actual.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq" data-aos="fade-right">
+                        <h4>UVEG</h4>
+                        <span class="casa">UNIVERSIDA UVEG </span>
+                        <span class="fecha">2020 - 2023</span>
+                        <br>
+                        <p>Practicas como alumno y contenido especializado en tecnología y desarrollo en negocios
+                            digitales. Además, permite obtener
+                            certificados valiosos que puedan luego sumarte como un respaldo a tu profesion
+                            para tener más posibilidades en el mundo laboral.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha" data-aos="fade-left">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der" data-aos="fade-left">
+                        <h4>Pagina Web Comercial</h4>
+                        <span class="casa">Junior FrontEnd</span>
+                        <span class="fecha">2023</span>
+                        <p>Practicas como pasante en el desarrollo de FrontEnd para pasantia en un negocio de farmacia
+                            creandole una pagina web para su negocio y desarrollandole un pequeño sistema de ventas en
+                            diseño de
+                            software utilizado para gestionar las relaciones con los
+                            clientes en crud, el cual sirve para organizar la información de la empresa, inventario y
+                            clientes.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <img src="img/xisraeltech (1).gif" alt="">
+                    <div class="overlay">
+                        <a href="https://github.com/xisraeluni" target="_blank" class="p1">
+                            <h3>Git Hub</h3>
+                        </a>
+                        <a href="https://github.com/xisraeluni" target="_blank" class="p1">
+                            <p>Mis proyectos</p>
+                        </a>
+                        <a href="https://github.com/xisraeluni" target="_blank" class="p2">
+                            <p>Clik Me</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <img src="img/ia7.PNG" alt="">
+                    <div class="overlay">
+                        <a href="https://encriptado-alfanumerico.netlify.app/" target="_blank" class="p1">
+                            <h3>Encriptador de Texto</h3>
+                        </a>
+                        <a href="https://encriptado-alfanumerico.netlify.app/" target="_blank" class="p1">
+                            <p>Mis proyectos</p>
+                        </a>
+                        <a href="https://encriptado-alfanumerico.netlify.app/" target="_blank" class="p2">
+                            <p>Clik Me</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <img src="img/logo_devloper.PNG" alt="">
+                    <div class="overlay">
+                        <a href="https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671210503Prancheta_3.png?utm_campaign=alura_latam_-_challenge_email_projeto_1_esp&utm_medium=email&utm_source=RD+Station" target="_blank" class="p1">
+                            <h3>Insignia Challenge Alura</h3>                            
+                        </a>
+                        <a href="https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671210503Prancheta_3.png?utm_campaign=alura_latam_-_challenge_email_projeto_1_esp&utm_medium=email&utm_source=RD+Station" target="_blank" class="p1"> 
+                            <p>Alura Latam</p>                           
+                        </a>
+                        <a href="https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671210503Prancheta_3.png?utm_campaign=alura_latam_-_challenge_email_projeto_1_esp&utm_medium=email&utm_source=RD+Station" target="_blank" class="p2">
+                            <p>Clik Me</p>                            
+                        </a>                        
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="fade-right" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <img src="img/old_pc.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Aun en proyecto</h3>
+                        <p>Seguimos trabajando</p>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <img src="img/pc_old.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Aun en proyecto</h3>
+                        <p>Seguimos trabajando</p>
+                    </div>
+                </div>
+                <div class="proyecto" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                    <img src="img/pc_complet.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Aun en proyecto</h3>
+                        <p>Seguimos trabajando</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer id="final">
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes1" data-aos="fade-up" data-aos-duration="3000">
+            <h2>CONTACTO</h2>
+            <a href="https://www.facebook.com/israel.bas.2019/" target="_blank"><i
+                    class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/xisrael34" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.tiktok.com/@xisraeluni?is_from_webapp=1&sender_device=pc" target="_blank"><i
+                    class="fa-brands fa-tiktok"></i></a>
+            <a href="https://github.com/xisraeluni" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+        </div>
+        <div class="barra-footer">
+            &copy; Derechos Reservados por Xtech - Mexico 2023.
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+    <!-- section music -->
+    <audio id="music" loop>
+        <source src="Dance_With_Me.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        function PlayAudio() {
+            document.getElementById("music").play();
+        }
+    </script>
+</body>
+
+</html>
